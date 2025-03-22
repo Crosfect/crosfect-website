@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const HowWedoIt = () => {
@@ -43,9 +44,10 @@ const HowWedoIt = () => {
             We follow a structured, data-driven approach to deliver high-impact
             digital solutions.
           </p>
-          <button className=" w-[50%] lg:w-auto relative border font-semibold border-blue-600 text-blue-600 m-0  h-[50px] px-4 lg:px-10 rounded-md">
+          <Link href='/work'>
+          <button className=" w-[50%] lg:w-auto relative border font-semibold border-blue-600 text-blue-600 m-0  h-[50px] px-4 lg:px-10 rounded-md cursor-pointer">
             All work
-          </button>
+          </button></Link>
         </div>
         <div className="mt-12 grid lg:grid-cols-5 md:grid-cols-2 justify-center items-center ">
           <Card

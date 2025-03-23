@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <>
       <div className="bg-gradient-to-b from-white via-blue-100 to-white overflow-hidden lg:h-[100vh]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 relative">
           <div className="flex flex-col items-center justify-center py-10 lg:py-16">
             <div className=" w-12 h-12 right-bottom shadow-gray-700 bg-white rounded flex items-center justify-center">
               <Image
@@ -67,7 +67,7 @@ export default function Home() {
               <div className=" flex items-center justify-center rounded-[10px] h-[36%] w-[24%] glassmorphism absolute top-[10px] overflow-hidden right-[-150px] transform -rotate-16 transition-transform duration-300">
                 tu
               </div>
-              <div className="  items-left justify-left  rounded-[0px] h-[50%] w-[20%] bg-yellow-400 absolute top-[380px] hidden lg:flex lg:left-[-80px] transform rotate-8 transition-transform duration-300">
+              <div className="  items-left justify-left  rounded-[0px] h-[50%] w-[20%] bg-yellow-400 absolute top-[380px] hidden lg:flex lg:left-[-20px] transform rotate-8 transition-transform duration-300">
                 <div className="bg-red-600 w-[20px] h-[20px] rounded-full absolute -top-2 -left-2" />
                 <ol className="text-black list-decimal p-10 text-lg font-serif italic">
                   <li>Discuss</li>
@@ -101,7 +101,7 @@ export default function Home() {
       <Testimonials />
 
       {/* Contact */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-12">
         <div className="lg:w-2/3">
           <h1 className="text-3xl md:text-4xl lg:text-8xl font-semibold ">
             Ready to transform your business?

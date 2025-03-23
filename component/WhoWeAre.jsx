@@ -4,10 +4,10 @@ import React from "react";
 const WhoWeAre = () => {
   return (
     <div className="w-full" id='about'>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20 bg-white flex lg:flex-row flex-col">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-12 lg:py-20 bg-white flex lg:flex-row flex-col">
         <div className="flex flex-col lg:w-1/2">
           <h1 className="font-semibold text-3xl text-blue-900">CROSFECT - <span className="text-blue-600">The Brand</span></h1>
-          <p className="pt-6 text-lg font-serif">
+          <p className="pt-6 text-lg text-black">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae
             molestie lacus, blandit iaculis neque. Vivamus nisi tortor,
             venenatis nec venenatis quis, interdum id turpis.  Nullam nec

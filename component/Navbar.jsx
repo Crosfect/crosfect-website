@@ -16,9 +16,9 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 bg-white shadow-md z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+        <div className="flex justify-between h-24">
           <div className="flex-shrink-0 flex items-center">
-            <Link href="/" className="text-blue-600 font-bold text-xl">
+            <Link href="/" className="text-blue-600 font-bold text-xl" onClick={() => setIsOpen(false)}>
               <Image
                 src="/crosfect-logo.png"
                 alt="crosfect-logo"
@@ -35,7 +35,7 @@ const Navbar = () => {
               className="inline-flex items-center justify-center p-2 rounded-md text-blue-600 hover:text-blue-800 focus:outline-none"
             >
               <svg
-                className="h-6 w-6"
+                className="h-10 w-10"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -61,19 +61,17 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden md:flex md:items-center md:space-x-6 text-lg font-medium">
-            <Link href="/whoweare" className="text-blue-600 hover:text-blue-800">
-              Who we are
+          <div className="hidden lg:flex lg:items-center lg:space-x-6 text-lg font-medium ">
+            <Link href="/about" className="text-blue-600 hover:text-blue-800">
+              About
             </Link>
             <Link
               href="#services"
               className="text-blue-600 hover:text-blue-800"
             >
-              What we do
+              Services
             </Link>
-            <Link href="#process" className="text-blue-600 hover:text-blue-800">
-              How we do it
-            </Link>
+            
             <Link href="/work" className="text-blue-600 hover:text-blue-800">
               Work
             </Link>
@@ -93,29 +91,23 @@ const Navbar = () => {
 
       {/* Mobile Navigation Links */}
       {isOpen && (
-        <div className="md:hidden">
+        <div className="lg:hidden absolute z-10 bg-white h-screen w-full">
           <div className="px-8 pt-2 pb-3 space-y-1 sm:px-3 gap-3 flex flex-col">
             <Link
-              href="/whoweare"
+              href="/about"
               className="block text-blue-600 hover:text-blue-800"
               onClick={() => setIsOpen(!isOpen)}
             >
-              Who we are
+              About
             </Link>
             <Link
               href="#services"
               className="block text-blue-600 hover:text-blue-800"
               onClick={() => setIsOpen(!isOpen)}
             >
-              What we do
+              Services
             </Link>
-            <Link
-              href="#process"
-              className="block text-blue-600 hover:text-blue-800"
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              How we do it
-            </Link>
+            
             <Link
               href="/work"
               className="block text-blue-600 hover:text-blue-800"
